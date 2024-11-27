@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    /* retira a margem de todos os itens*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background: #000000;
+    padding: 20px 20px;
+    box-shadow: 0px 4px 4px black;
+    position: absolute;
+    top: 0;
+    opacity: 70%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.menu ul li a {
+    opacity: 70%;
+    text-transform: uppercase;
+    margin-right: 40px;
+    color: white;
+    letter-spacing: 0.1rem;
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    opacity: 100%;
+    border-left: 2px solid white;
+}
+
+.bemvindo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    background-image: url(../src/img1.jpg);
+}
+
+.bemvindo h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.bemvindo p {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 20px;
+    letter-spacing: 0.30rem;
+
+}
+
+.sobremim {
+    background: #001d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sobremim h1 {
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.30rem;
+}
+
+.sobremim .conteudo {
+    display: flex;
+    align-items: center;
+
+}
+
+.sobremim p {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 135px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.habilidades {
+    height: 600px;
+    background: #001d2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.30rem;
+}
+
+.habilidades .cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    color: white;
+    text-align: center;
+     
+}
+
+.habilidades .card1,
+.habilidades .card2,
+.habilidades .card3,
+.habilidades .card4 {
+    margin-top: 30px;
+    width: 220px;
+    height: 280px;
+    background: rgba(81, 78, 78, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(177, 168, 168, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icones {
+    padding-top: 12%;
+    width: 40%;
+}
+
+.cardh3 {
+    padding-top: 3%;
+
+}
+
+.pargcard {
+    padding: 8%;
+    font-size: 14px;
+}
+
+.projeto-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #001d2d;
+    color: white;
+}
+
+.section-titulos {
+    font-weight: 600px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.30rem;
+    margin-top: 20px;
+}
+
+.projeto1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+    width: 100%;
+}
+
+.card-projeto1{
+    background-image: url('/src/projeto1.png');
+}
+
+.card-projeto2{
+    background-image: url('/src/sexyshop.jpg');    
+}
+
+.card-projeto3{
+    background-image: url('/src/projeto3.png');
+    
+}
+
+.card-img{
+    
+    background-size: cover;    
+    background-position: center;
+    border-radius: 20px;
+    width: 18rem;
+    height: 25rem;
+    margin-left: 30px;
+    box-shadow: 0 8px 15px rgba(177, 168, 168, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 2%;
+}
+
+
+.project-text{
+    width: 50%;
+
+}
+
+.project-text h3 {
+    font-size: 30px;
+    font-weight: 400px;
+}
+
+
+.project-text p {
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.contato-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #001d2d;
+    color: white;
+}
+
+.contato-icones{
+    padding-bottom: 5px;
+    width: 50px;
+    margin: 25px;
+}
