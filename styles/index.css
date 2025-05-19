@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #5E5C5D;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.content-topo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    width: 100%;
+    }
+
+.title-topo {
+    padding-left: 180px;
+}
+
+.title-topo h1 {
+    color: #D9D5D3;
+    font-size: 78px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.9; /* ou experimente 0.9 */
+}
+
+.title-topo h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 0;
+    color: #1494F5;
+}
+
+
+.foto-topo img {
+    width: 450px;
+    padding-right: 180px;
+    padding-top: 20px;
+    transition: all 0.3s ease;        
+    
+}
+
+.foto-topo img:hover {
+    transform: scale(0.9);
+    opacity: 0.95;
+    border: none;
+}
+
+main{
+    margin:0px 180px 0px 180px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    gap: 20px;
+}
+
+.cards-container p{
+    font-size: 12px;
+    color: #D9D5D3;
+    width: 100%;
+}
+
+.cards{
+  flex: 1;
+  height: 300px;
+  background-color: #3A3839;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.cards a {
+  color: white;
+  padding: 5px;
+  font-size: 32px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.cards a:hover {
+  transform: scale(0.1);
+  color: #ccc;
+}
+
+.cards-container h4{
+    color: #D9D5D3;
+    text-align: left;   
+    transition: all 0.3s ease;
+}
+
+.cards-container h4:hover{
+    transform: translate(5px);
+    color: #1494F5;
+}
+
+.cards.destaque {
+    flex: 2; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.cards p, .card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 10px ;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.projetos-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.card{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  background-color: #2f2d2e;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.projetos-card img {
+  width: 80%;
+  height: 170px;
+  border-radius: 4px;
+}
+
+.skills {
+  color: white;  
+}
+
+.skills i {
+  color: white;
+  font-size: 32px;
+  cursor: default;
+  transition: transform 0.2s ease;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.skills i:hover {
+  transform: scale(1.1);
+  color: #ccc;
+}
+
+@media (max-width: 1024px) {
+    .title-topo {
+        padding-left: 60px;
+    }
+
+    .foto-topo img {
+        width: 300px;
+        padding-right: 60px;
+    }
+
+    main {
+        margin: 0 60px;
+    }
+    .projetos-card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        height: auto;
+    }
+    .projetos-card img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 596px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cards,
+  .cards.destaque {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    .content-topo {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .title-topo {
+        padding-left: 0;
+    }
+
+    .foto-topo img {
+        padding-right: 0;
+        width: 280px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cards, .cards.destaque {
+        width: 100%;
+    }
+
+    main {
+        margin: 0 20px;
+    }
+    .projetos-card {
+    flex-direction: column;
+    align-items: center;
+    }
+
+     .card {
+    width: 100%;
+    max-width: 300px;
+     }
+
+    .projetos-card img {
+    width: 100%;
+    height: auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .title-topo h1 {
+        font-size: 42px;
+    }
+
+    .title-topo h3 {
+        font-size: 22px;
+    }
+
+    .foto-topo img {
+        width: 220px;
+    }
+
+    .card {
+        width: 100px;
+    }
+
+    .projetos-card img {
+        width: 100px;
+        height: auto;
+    }
+}
